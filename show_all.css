@@ -1,0 +1,66 @@
+.artist-container-text .h2:hover{
+    text-decoration: none;
+    cursor: text;
+}
+.artist-card {
+    flex-wrap: wrap;
+}
+.artist{
+    margin-bottom: 20px;
+}
+
+.artist ,
+.artist-inner{
+    height: 255px;
+    width: 190px;
+}
+
+.Arijit .artist-image,
+.Anirudh .artist-image,
+.Vishal .artist-image,
+.Diljit .artist-image,
+.Badshah .artist-image,
+.Shreya .artist-image,
+.Karan .artist-image,
+.Darshan .artist-image,
+.Sonu .artist-image,
+.Anuv .artist-image {
+    width: 170px;
+    height: 170px;
+    background-position: center;
+    background-size: contain;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.Vishal .artist-image {
+    background-image: url(https://i.scdn.co/image/ab67616100005174fb13d10be20fdcb5a670f551);
+}
+
+.Diljit .artist-image {
+    background-image: url(https://i.scdn.co/image/ab67616100005174fc043bea91ac91c222d235c9);
+}
+
+.Badshah .artist-image {
+    background-image: url(https://i.scdn.co/image/ab67616100005174eddbb664c4723f268a60d8c1);
+}
+
+.Shreya .artist-image {
+    background-image: url(https://i.scdn.co/image/ab6761610000517459303d54ce789210e745e1a9);
+}
+
+.Karan .artist-image {
+    background-image: url(https://i.scdn.co/image/ab676161000051747aa689cd7ca136098b26c20d);
+}
+
+.Darshan .artist-image {
+    background-image: url(https://i.scdn.co/image/ab67616100005174a80a803733f6a070e8f873fb);
+}
+
+.Anuv .artist-image {
+    background-image: url(https://i.scdn.co/image/ab67616100005174a837a6cb82dd949d5e1f9b53);
+}
+
+.artist-container {
+    margin-left: 22px;
+}

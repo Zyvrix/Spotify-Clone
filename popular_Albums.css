@@ -1,0 +1,55 @@
+.album-container {
+    width: 100%;
+}
+.album-container-text {
+    margin-bottom: 24px;
+}
+
+.album-card {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr); 
+    gap:45px 24px; 
+    margin-bottom: 24px;
+    overflow: visible;
+}
+.artist{
+    height: 290px;
+    width: 220px;
+}
+.artist-inner{ 
+    height: 290px;
+    width: 220px; 
+    padding: 10px 15px 20px;
+}
+.artist-text {
+    margin-top: 8px;
+}
+.artist .play-icon{
+    top: 160px;
+}
+.artist:hover .play-icon{
+    top: 140px;
+}
+.artist-text-name {
+    font-size: 16px;
+    font-weight: 700;
+    margin-bottom: 4px;
+}
+
+@media (max-width: 1200px) {
+    .album-card {
+        grid-template-columns: repeat(4, 1fr); 
+    }
+}
+
+@media (max-width: 768px) {
+    .album-card {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+}
+
+@media (max-width: 480px) {
+    .album-card {
+        grid-template-columns: 1fr; 
+    }
+}

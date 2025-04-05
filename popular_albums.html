@@ -1,0 +1,947 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="icon" href="https://open.spotify.com/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="popular_albums.css">
+    <title>Spotify - Web Player: Music for everyone</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="navbar flex">
+            <img src="svg/hamburger.svg" alt="" class="hamburger">
+            <div class="header flex">
+                <div class="logo">
+                    <img src="svg/logo.svg" alt="Spotify" title="Spotify">
+                </div>
+                <div class="navigate flex">
+                    <div class="home">
+                        <a href="index.html"><img src="svg/home.svg" alt="Home" title="Home"></a>
+                    </div>
+                    <div class="search-bar flex">
+                        <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+                            viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE search-icon" fill="#9f9f9f" height="24px">
+                            <path
+                                d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
+                            </path>
+                        </svg>
+                        <input type="text" placeholder="What do you want to play?" class="white-text font">
+                        <a href="browse.html"><img src="svg/browse.svg" alt="browse-icon" title="Browse"
+                                class="browse-icon"></a>
+                    </div>
+                </div>
+                <div class="login flex">
+                    <a href="sign-up.html"><button class="sign-up font">Sign Up</button></a>
+                    <a href="login.html"><button class="log-in font">Log in</button></a>
+                </div>
+            </div>
+        </div>
+        <div class="container-content flex">
+            <div class="left">
+                <div class="library flex">
+                    <div class="your-library font flex" title="Collapse Your Library">
+                        <svg height="24" fill="rgba(179,179,179,1)" xmlns="http://www.w3.org/2000/svg"
+                            data-encore-id="icon" role="img" aria-hidden="true" viewBox="0 0 24 24"
+                            class="Svg-sc-ytk21e-0 bneLcE playlist">
+                            <path
+                                d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+                            </path>
+                        </svg>
+                        <p>Your Library</p>
+                    </div>
+                    <div class="add-icon" title="Create playlist or folder">
+                        <img src="svg/add-icon.svg" alt="add-icon">
+                    </div>
+                </div>
+                <div class="section white-text font">
+                    <div class="playlist-section flex">
+                        <div class="create-playlist flex">
+                            <div class="create-playlist-text">
+                                <p style="font-weight: bold;">Create your first playlist</p>
+                                <p style="font-size: 14px;">It's easy we'll help you</p>
+                            </div>
+                            <div class="create-playlist-button">
+                                <button>Create playlist</button>
+                            </div>
+                        </div>
+                        <div class="podcast-section flex">
+                            <div class="podcast-section-text">
+                                <p style="font-weight: bold;">Let's find some podcasts to follow</p>
+                                <p style="font-size: 14px;">We'll keep you updated on new episodes </p>
+                            </div>
+                            <div class="podcast-section-button">
+                                <button>Browse podcasts</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-footer">
+                    <div class="notice">
+                        <div class="policy font flex">
+                            <div class="legal">
+                                <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                            </div>
+                            <div class="safety">
+                                <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+                            </div>
+                            <div class="privacy">
+                                <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+                            </div>
+                            <div class="cookies">
+                                <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+                            </div>
+                            <div class="ads">
+                                <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+                            </div>
+                            <div class="accessibility">
+                                <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+                            </div>
+                        </div>
+                        <div class="cookie">
+                            <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                                class="white-text font">Cookies</a>
+                        </div>
+                    </div>
+                    <div class="lang">
+                        <button class="white-text font flex" id="language-toggle">
+                            <img src="svg/language.svg" alt="language" height="16px"> English
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="right white-text font">
+                <div class="right-top">
+                    <div class="right-content">
+                        <section class="album-container">
+                            <div class="album-container-text">
+                                <div class="album-container-text-inner flex">
+                                    <div class="h2">
+                                        <h2 style="font-size: 20px; font-weight: 600;">Popular albums and singles</h2>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="album-card flex">
+                                <div class="Glory">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e02aad3f4b601ae8763b3fc4e88"
+                                                    alt="Glory">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">GLORY</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <a href="">Yo Yo Honey Singh</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Aashiqui-2">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e026404721c1943d5069f0805f3"
+                                                    alt="Aashiqui-2">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Aashiqui 2</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Mithoon,</a>
+                                                        <a href="">Ankit Tiwari,</a>
+                                                        <a href="">Jeet</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Patandar">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e0209c9bf421422262c368009d6"
+                                                    alt="Patandar">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Patandar</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p>
+                                                        <a href="">Arjan Dhillon,</a>
+                                                        <a href="">Mxrci</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="JTMH">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e0272a77d038887cdc425f5ee55"
+                                                    alt="Jo Tum mere Ho">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Jo Tum Mere Ho</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Anuv Jain</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="MM">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e02bb25239324c4e16ae01fda36"
+                                                    alt="Making Memories">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Making Memories</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Karan Aujla,</a>
+                                                        <a href="">Ikky</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="YJHD">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e02707ea5b8023ac77d31756ed4"
+                                                    alt="Yeh Jawani Hain Deewani">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Yeh Jawaani Hai Deewani</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Pritam</a></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="Animal">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e025f3ede47954a93aa03efe5f9"
+                                                    alt="Animal">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">ANIMAL</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Manan Bhardwaj,</a>
+                                                        <a href="">Vishal Mishra,</a>
+                                                        <a href="">Jaani</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Who Remixes">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e027f35adfbec3bb2bc8256802b"
+                                                    alt="Who">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Who (Remixes)</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Jimin</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ghost">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e02cb2f9520171129a3df7a241a"
+                                                    alt="ghost">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Ghost</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Diljit Dosanjh</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Moosetape">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e021d1cc2e40d533d7bcebf5dae"
+                                                    alt="Moosetape">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Moosetape</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Sidhu Moose Wala</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="ultimate">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e021aa5adad8593923dcdf1a7d0"
+                                                    alt="Animal">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Ultimate Love Songs-Arijit Singh</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Arijit Singh</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="still rollin">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e021a8c4618eda885a406958dd0"
+                                                    alt="Still rollin">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Still Rollin</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Shubh</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Raanjhan">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e02773c5f60bcb309ef8802e4ef"
+                                                    alt="Raanjhan">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Raanjhan (From "Do Patti")</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Sachet-Parampara,</a>
+                                                    <p><a href="">Kausar Munir</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Kabir singh">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e02c5545f737b16ad5ee767b62a"
+                                                    alt="Kabir singh">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Kabir Singh</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Sachet-Parampara,</a>
+                                                    <a href="">Vishal Mishra,</a>
+                                                    <a href="">Mithoon</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Rockstar">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e0254e544672baa16145d67612b"
+                                                    alt="Rockstar">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Rockstar</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">A.R Rahman,</a>
+                                                    <p><a href="">Irshad Kamil</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Jab we met">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e0252fe6875028c892308ffc2f7"
+                                                    alt="Jab we met">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Jab We Met</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Pritam,</a>
+                                                    <a href="">Irshad Kamil,</a>
+                                                    <a href="">Sandesh Shandliya</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                                <div class="Adhuri kahani">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e02b0f9ceb59927ab76fe6269be"
+                                                    alt="Adhuri kahani">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Hamari Adhuri Kahani (Original Soundtrack)</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Jeet Gannguli,</a>
+                                                    <a href="">Mithoon,</a>
+                                                    <a href="">Sandesh Shandliya</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="Ek the raja">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e029bb2d30b01ac2cada8a8ad03"
+                                                    alt="ek tha raja">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Ek The Raja</a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Badshah</a>
+                                                    
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="aaj ki rat">
+                                    <div class="artist">
+                                        <div class="artist-inner">
+                                            <div class="play-icon flex">
+                                                <div class="play-icon-inner flex">
+                                                    <img src="svg/play-icon.svg" alt="play-icon">
+                                                </div>
+                                            </div>
+                                            <div class="album-image">
+                                                <img src="https://i.scdn.co/image/ab67616d00001e025e16168f7e8ff4fb8aace6cf"
+                                                    alt="aaj ki rat">
+                                            </div>
+                                            <div class="artist-text">
+                                                <div class="artist-text-name">
+                                                    <a href="" class="white-text">Aaj Ki Rat (From "Stree") </a>
+                                                </div>
+                                                <div class="album-text-artist">
+                                                    <p><a href="">Sachin-Jigar,</a>
+                                                    <a href="">Amitabh Bhattacharya</a>
+                                                    </p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="right-bottom">
+                    <div class="right-footer">
+                        <div class="right-footer-top flex">
+                            <div class="right-footer-top-content flex">
+                                <div class="right-footer-top-content-links">
+                                    <ul>
+                                        <p>Company</p>
+                                        <li><a href="https://www.spotify.com/in-en/about-us/contact/"
+                                                role="link">About</a></li>
+                                        <li><a href="https://www.lifeatspotify.com/" role="link">Jobs</a></li>
+                                        <li><a href="https://newsroom.spotify.com/" role="link">For the Record</a></li>
+                                    </ul>
+                                </div>
+                                <div class="right-footer-top-content-links">
+                                    <ul>
+                                        <p>Communities</p>
+                                        <li><a href="https://artists.spotify.com/" role="link">For Artists</a></li>
+                                        <li><a href="https://developer.spotify.com/" role="link">Developers</a></li>
+                                        <li><a href="https://ads.spotify.com/" role="link">Advertising</a></li>
+                                        <li><a href="https://investors.spotify.com/" role="link">Investors</a></li>
+                                        <li><a href="https://spotifyforvendors.com/" role="link">Vendors</a></li>
+                                    </ul>
+                                </div>
+                                <div class="right-footer-top-content-links">
+                                    <ul>
+                                        <p>Useful links</p>
+                                        <li><a href="https://support.spotify.com/" role="link">Support</a></li>
+                                        <li><a href="https://www.spotify.com/in-en/free/" role="link">Free Mobile
+                                                App</a></li>
+                                    </ul>
+                                </div>
+                                <div class="right-footer-top-content-links">
+                                    <ul>
+                                        <p>Spotify Plans</p>
+                                        <li><a href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_premium_individual"
+                                                role="link">Premium Individual</a></li>
+                                        <li><a href="https://www.spotify.com/in-en/duo/#ref=spotifycom_footer_premium_duo"
+                                                role="link">Premium Duo</a></li>
+                                        <li><a href="https://www.spotify.com/in-en/family/#ref=spotifycom_footer_premium_family"
+                                                role="link">Premium Family</a></li>
+                                        <li><a href="https://www.spotify.com/in-en/student/#ref=spotifycom_footer_premium_student"
+                                                role="link">Premium Student</a></li>
+                                        <li><a href="https://www.spotify.com/in-en/free/#ref=spotifycom_footer_free"
+                                                role="link">Spotify Free</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="right-footer-top-social-media flex">
+                                <div class="instagram">
+                                    <a href="https://instagram.com/spotify" aria-label="Instagram" title="Instagram"
+                                        target="_blank" rel="noopener noreferrer"><img
+                                            src="svg/instagram-brands-solid.svg" alt="Instagram"></a>
+                                </div>
+                                <div class="twitter">
+                                    <a href="https://twitter.com/spotify" aria-label="Twitter" title="Twitter"
+                                        target="_blank" rel="noopener noreferrer"><img
+                                            src="svg/x-twitter-brands-solid.svg" alt="Twitter"></a>
+                                </div>
+                                <div class="facebook">
+                                    <a href="https://www.facebook.com/Spotify" aria-label="Facebook" title="Facebook"
+                                        target="_blank" rel="noopener noreferrer"><img
+                                            src="svg/facebook-brands-solid.svg" alt="Facebook"></a>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="horizontal-rule">
+                        <div class="right-footer-bottom">
+                            <div class="right-footer-bottom-text">
+                                <p style="color: #b3b3b3; font-size: 14px;">© 2024 Spotify AB</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer white-text font">
+            <footer class="flex">
+                <div class="footer-inner flex">
+                    <div class="footer-text">
+                        <p style="font-size: 14px; font-weight: 600;">Preview of Spotify</p>
+                        <p style="font-size: 15px;">Sign up to get unlimited songs and podcasts with occasional ads.
+                            No credit card needed.</p>
+                    </div>
+                    <a href="sign-up.html" class="flex"><button>Sign up for free</button></a>
+                </div>
+            </footer>
+        </div>
+        <div>
+            <div class="container-lang" id="container-lang" style="display: none;">
+                <div class="lang-area" id="lang-area">
+                    <div class="lang-area-top flex">
+                        <div class="lang-area-text white-text font">
+                            <h1>Choose a language</h1>
+                            <p>This updates what you read on open.spotify.com</p>
+                        </div>
+                        <button class="flex" id="close-icon"><img src="svg/close-icon.svg" alt="close-icon"></button>
+                    </div>
+                    <div class="lang-area-bottom">
+                        <button class="lang-area-bottom-button font">
+                            <span>English</span><span class="lang-area-bottom-span">English</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Afrikaans</span><span class="lang-area-bottom-span">Afrikaans</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>አማርኛ</span><span class="lang-area-bottom-span">Amharic</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>العَرَبِيَّة</span><span class="lang-area-bottom-span">Arabic</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>عربي مصري</span><span class="lang-area-bottom-span">Arabic (Egypt)</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>العَرَبِيَّة مغربي</span><span class="lang-area-bottom-span">Arabic
+                                (Morocco)</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>العربية السعودية</span><span class="lang-area-bottom-span">Arabic (Saudi
+                                Arabia)</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Azərbaycanca</span><span class="lang-area-bottom-span">Azerbaijani</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Български</span><span class="lang-area-bottom-span">Bulgarian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>भोजपुरी</span><span class="lang-area-bottom-span">Bhojpuri</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>বাংলা</span><span class="lang-area-bottom-span">Bengali</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Bosanski</span><span class="lang-area-bottom-span">Bosnian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Català</span><span class="lang-area-bottom-span">Catalan</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Čeština</span><span class="lang-area-bottom-span">Czech</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Dansk</span><span class="lang-area-bottom-span">Danish</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Deutsch</span><span class="lang-area-bottom-span">German</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Eλληνικά</span><span class="lang-area-bottom-span">Greek</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>English</span><span class="lang-area-bottom-span">United Kingdom</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Español de España</span><span class="lang-area-bottom-span">European
+                                Spanish</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Español (Argentina)</span><span class="lang-area-bottom-span">Spanish
+                                (Argentina)</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Español (México)</span><span class="lang-area-bottom-span">Spanish (Mexico)</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Eesti</span><span class="lang-area-bottom-span">Estonian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Euskara</span><span class="lang-area-bottom-span">Basque</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>فارسی</span><span class="lang-area-bottom-span">Persian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Suomeksi</span><span class="lang-area-bottom-span">Finnish</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Filipino</span><span class="lang-area-bottom-span">Filipino</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Français</span><span class="lang-area-bottom-span">French</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Français Canadien</span><span class="lang-area-bottom-span">Canadian French</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Galego</span><span class="lang-area-bottom-span">Galician</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>ગુજરાતી</span><span class="lang-area-bottom-span">Gujarati</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>עברית</span><span class="lang-area-bottom-span">Hebrew</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>हिन्दी</span><span class="lang-area-bottom-span">Hindi</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Hrvatski</span><span class="lang-area-bottom-span">Croatian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Magyar</span><span class="lang-area-bottom-span">Hungarian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Indonesia</span><span class="lang-area-bottom-span">Indonesian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Íslenska</span><span class="lang-area-bottom-span">Icelandic</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Italiano</span><span class="lang-area-bottom-span">Italian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>日本語</span><span class="lang-area-bottom-span">Japanese</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>ಕನ್ನಡ</span><span class="lang-area-bottom-span">Kannada</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>한국어</span><span class="lang-area-bottom-span">Korean</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Lietuvių</span><span class="lang-area-bottom-span">Lithuanian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Latviešu</span><span class="lang-area-bottom-span">Latvian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Македонски</span><span class="lang-area-bottom-span">Macedonian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>മലയാളം</span><span class="lang-area-bottom-span">Malayalam</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>मराठी</span><span class="lang-area-bottom-span">Marathi</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Bahasa Melayu</span><span class="lang-area-bottom-span">Malay</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Norsk bokmål</span><span class="lang-area-bottom-span">Norwegian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>नेपाली</span><span class="lang-area-bottom-span">Nepali</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Nederlands</span><span class="lang-area-bottom-span">Dutch</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>ଓଡ଼ିଆ</span><span class="lang-area-bottom-span">Odia</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>ਪੰਜਾਬੀ</span><span class="lang-area-bottom-span">Punjabi</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>پنجابی</span><span class="lang-area-bottom-span">Punjabi (Naskh)</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Polski</span><span class="lang-area-bottom-span">Polish</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Português do Brasil</span><span class="lang-area-bottom-span">Portuguese
+                                (Brazil)</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Português</span><span class="lang-area-bottom-span">European Portuguese</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Română</span><span class="lang-area-bottom-span">Romanian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Русский</span><span class="lang-area-bottom-span">Russian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Slovenčina</span><span class="lang-area-bottom-span">Slovak</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Slovenščina</span><span class="lang-area-bottom-span">Slovenian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Српски</span><span class="lang-area-bottom-span">Serbian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Svenska</span><span class="lang-area-bottom-span">Swedish</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Kiswahili</span><span class="lang-area-bottom-span">Swahili</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>தமிழ்</span><span class="lang-area-bottom-span">Tamil</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>తెలుగు</span><span class="lang-area-bottom-span">Telugu</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>ไทย</span><span class="lang-area-bottom-span">Thai</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Türkçe</span><span class="lang-area-bottom-span">Turkish</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Українська</span><span class="lang-area-bottom-span">Ukrainian</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>اردو</span><span class="lang-area-bottom-span">Urdu</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>Tiếng Việt</span><span class="lang-area-bottom-span">Vietnamese</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>简体中文</span><span class="lang-area-bottom-span">Simplified Chinese</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>繁體中文 (香港)</span><span class="lang-area-bottom-span">Chinese(Traditional) Hong
+                                Kong</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>中文</span><span class="lang-area-bottom-span">Traditional Chinese</span>
+                        </button>
+                        <button class="lang-area-bottom-button font">
+                            <span>isiZulu</span><span class="lang-area-bottom-span">Zulu</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="buttonToggle.js"></script>
+</body>
+
+</html>

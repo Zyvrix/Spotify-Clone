@@ -1,0 +1,852 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="stylesheet" href="utility.css"/>
+  <link rel="stylesheet" href="browse.css"/>
+  <link rel="icon" href="https://open.spotify.com/favicon.ico" type="image/x-icon" />
+  <title>Spotify - Search</title>
+</head>
+
+<body>
+  <div class="container">
+    <div class="navbar flex">
+      <div class="header flex">
+        <div class="logo">
+          <img src="svg/logo.svg" alt="Spotify" title="Spotify" />
+        </div>
+        <div class="navigate flex">
+          <div class="home">
+            <a href="index.html"><img src="svg/home.svg" alt="Home" title="Home" /></a>
+          </div>
+          <div class="search-bar flex">
+            <svg xmlns="http://www.w3.org/2000/svg" data-encore-id="icon" role="img" aria-hidden="true"
+              viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE search-icon" fill="#9f9f9f" height="24px">
+              <path
+                d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z">
+              </path>
+            </svg>
+            <input type="text" placeholder="What do you want to play?" class="white-text font" />
+            <a href="browse.html"><img src="svg/browse.svg" alt="browse-icon" title="Browse" class="browse-icon" /></a>
+          </div>
+        </div>
+        <div class="login flex">
+          <button class="sign-up font">Sign Up</button>
+          <button class="log-in font">Log in</button>
+        </div>
+      </div>
+    </div>
+    <div class="container-content flex">
+      <div class="left">
+        <div class="library flex">
+          <div class="your-library font flex" title="Collapse Your Library">
+            <svg height="24" fill="rgba(179,179,179,1)" xmlns="http://www.w3.org/2000/svg" data-encore-id="icon"
+              role="img" aria-hidden="true" viewBox="0 0 24 24" class="Svg-sc-ytk21e-0 bneLcE playlist">
+              <path
+                d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z">
+              </path>
+            </svg>
+            <p>Your Library</p>
+          </div>
+          <div class="add-icon" title="Create playlist or folder">
+            <img src="svg/add-icon.svg" alt="add-icon" />
+          </div>
+        </div>
+        <div class="section white-text font">
+          <div class="playlist-section flex">
+            <div class="create-playlist flex">
+              <div class="create-playlist-text">
+                <p style="font-weight: bold">Create your first playlist</p>
+                <p style="font-size: 14px">It's easy we'll help you</p>
+              </div>
+              <div class="create-playlist-button">
+                <button>Create playlist</button>
+              </div>
+            </div>
+            <div class="podcast-section flex">
+              <div class="podcast-section-text">
+                <p style="font-weight: bold">
+                  Let's find some podcasts to follow
+                </p>
+                <p style="font-size: 14px">
+                  We'll keep you updated on new episodes
+                </p>
+              </div>
+              <div class="podcast-section-button">
+                <button>Browse podcasts</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="left-footer">
+          <div class="notice">
+            <div class="policy font flex">
+              <div class="legal">
+                <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+              </div>
+              <div class="safety">
+                <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety & Privacy Center</a>
+              </div>
+              <div class="privacy">
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a>
+              </div>
+              <div class="cookies">
+                <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a>
+              </div>
+              <div class="ads">
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a>
+              </div>
+              <div class="accessibility">
+                <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a>
+              </div>
+            </div>
+            <div class="cookie">
+              <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank"
+                class="white-text font">Cookies</a>
+            </div>
+          </div>
+          <div class="lang">
+            <button class="white-text font flex" id="language-toggle">
+              <img src="svg/language.svg" alt="language" height="16px" />
+              English
+            </button>
+          </div>
+        </div>
+      </div>
+      <div class="right white-text font">
+        <div class="right-top">
+          <div class="right-content">
+            <section class="right-content-section">
+              <div class="right-content-text white-text flex">
+                <h2 class="right-content-text-h2">Start Browsing</h2>
+              </div>
+              <div class="right-content-cards">
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex">
+                      <h2 class="browse-card-h2">Music</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf474a477debc822a3a45c5acb" alt="Music" />
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #006450">
+                      <h2 class="browse-card-h2">Podcasts</h2>
+                      <img src="https://i.scdn.co/image/ab6765630000ba8a81f07e1ead0317ee3c285bfa" alt="Podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)" />
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #8400e7">
+                      <h2 class="browse-card-h2">Live Events</h2>
+                      <img src="	https://concerts.spotifycdn.com/images/live-events_category-image.jpg" alt="Podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)" />
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #148A08;">
+                      <h2 class="browse-card-h2">2024 in Music</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf3a376f97c4510dd35ef8118b" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #DC148C;">
+                      <h2 class="browse-card-h2">2024 in Podcasts</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf90d9ad8b29f59a37da33aeea" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #1E3264;">
+                      <h2 class="browse-card-h2">Made For You</h2>
+                      <img src="https://t.scdn.co/images/ea364e99656e46a096ea1df50f581efe" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #608108;">
+                      <h2 class="browse-card-h2">New Releases</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf194fec0fdc197fb9e4fe8e64" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #B02897;">
+                      <h2 class="browse-card-h2">Punjabi</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf4f1aa71a9cdcffdf8430c070" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #BA5D07;">
+                      <h2 class="browse-card-h2">Tamil</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005cafae68f35dc5d86af7a1c1b58f" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #BA5D07;">
+                      <h2 class="browse-card-h2">Telegu</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf80699a8b7d59a21b38f964bd" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #0d73EC;">
+                      <h2 class="browse-card-h2">Podcast Charts</h2>
+                      <img src="https://t.scdn.co/images/7262179db37c498480ef06bfacb60310.jpeg" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #8E66AC;">
+                      <h2 class="browse-card-h2">Podcast New Releases</h2>
+                      <img src="https://t.scdn.co/images/209c867f5bb34076b0dcc9deeb1868e6" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #E13300;">
+                      <h2 class="browse-card-h2">Video Podcasts</h2>
+                      <img src="https://i.scdn.co/image/9af79fd06e34dea3cd27c4e1cd6ec7343ce20af4" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #777777;">
+                      <h2 class="browse-card-h2">Business & Technology</h2>
+                      <img src="https://i.scdn.co/image/e227cd9674618024276c65f1213fb05af34cf512" alt="podcasts"
+                        style="transform: rotate(25deg) translate(-5%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #8d67ab;">
+                      <h2 class="browse-card-h2">Charts</h2>
+                      <img
+                        src="https://charts-images.scdn.co/assets/locale_en/regional/weekly/region_global_default.jpg"
+                        alt="podcasts" style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #477D95;">
+                      <h2 class="browse-card-h2" style="font-size: 20px;">Malayalam</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf77a5fdbc439492d09d3d84fb" alt="podcasts"
+                        style="transform: rotate(25deg) translate(-5%, 30%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #E13300;">
+                      <h2 class="browse-card-h2">Bhojpuri</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005cafe362fbcb5932b28679cf00f8" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #8c1932;">
+                      <h2 class="browse-card-h2">Happy Holidays</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200008e2c64adf130003faa51378e3d2b" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #27856a;">
+                      <h2 class="browse-card-h2">Summmer</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf097a46192e6bb67e52cdff60" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #777777;">
+                      <h2 class="browse-card-h2">Ghazals</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf666a4ae3e6161da7a120ca14" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #477d95;">
+                      <h2 class="browse-card-h2">Pop</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf66d545e6a69d0bfe8bd1e825" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #e91429;">
+                      <h2 class="browse-card-h2">Indie</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005cafa1a252e3a815b65778d8c2aa" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #dc148c;">
+                      <h2 class="browse-card-h2">Love&nbsp;&nbsp;</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf21c9a95a2702ce535fb07915" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #b02897;">
+                      <h2 class="browse-card-h2">Trending</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf8e97784ff1e12e67ae922715" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #E1118c;">
+                      <h2 class="browse-card-h2">Mood</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005cafe542e9b59b1d2ae04b46b91c" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #8d67ab;">
+                      <h2 class="browse-card-h2">Party&nbsp;&nbsp;</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf0b0d0bfac454671832311615" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #c39687;">
+                      <h2 class="browse-card-h2">Devotional</h2>
+                      <img src="https://t.scdn.co/images/ad3e3f8f80eb494d998a435f7a5ae8c7" alt="podcasts"
+                        style="transform: rotate(24deg) translate(2%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #a56752;">
+                      <h2 class="browse-card-h2">Decades</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005cafb7e805033eb938aa75d09336" alt="podcasts"
+                        style="transform: rotate(25deg) translate(5%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #477d95;">
+                      <h2 class="browse-card-h2">Hip-Hop</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf5f3752b3234e724f9cd6056f" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #477d95;">
+                      <h2 class="browse-card-h2">Dance</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf26ada793217994216c79dad8" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #af2896;">
+                      <h2 class="browse-card-h2">Student</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005cafdad1281e13697e8d8cf8f347" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #b06239;">
+                      <h2 class="browse-card-h2">Chill&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf330ca3a3bfaf8b18407fb33e" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #e8115b;">
+                      <h2 class="browse-card-h2">Gaming</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf26dd3719e8824756914ae61f" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #e61e32;">
+                      <h2 class="browse-card-h2">K-pop</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf4b42030ee01cf793663dbb73" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #777777;">
+                      <h2 class="browse-card-h2">Workout</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf6af6d83c78493644c9b0627b" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #148A08;">
+                      <h2 class="browse-card-h2">RADAR</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf5b340bd0664da28003741733" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #006450;">
+                      <h2 class="browse-card-h2">Fresh Finds</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005cafcc1499bbb8565f490858c2bc" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #1e3264;">
+                      <h2 class="browse-card-h2">Sleep</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf1cef0cee1e498abb8e74955f" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #7d4b32;">
+                      <h2 class="browse-card-h2">Indian Classical</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf3a3e91f32b562c1c85af3288" alt="podcasts"
+                        style="transform: rotate(25deg) translate(15%, 25%)">
+                    </div>
+                  </a>
+                </div>
+                <div class="browse-card">
+                  <a href="" class="white-text">
+                    <div class="browse-card-inner flex" style="background-color: #537aa1;">
+                      <h2 class="browse-card-h2">Instrumental</h2>
+                      <img src="https://i.scdn.co/image/ab67fb8200005caf44774504bdbe31a7bc45598c" alt="podcasts"
+                        style="transform: rotate(25deg) translate(-25%, 35%)">
+                    </div>
+                  </a>
+                </div>
+            </section>
+          </div>
+        </div>
+        <div class="right-bottom">
+          <div class="right-footer">
+            <div class="right-footer-top flex">
+              <div class="right-footer-top-content flex">
+                <div class="right-footer-top-content-links">
+                  <ul>
+                    <p>Company</p>
+                    <li>
+                      <a href="https://www.spotify.com/in-en/about-us/contact/" role="link">About</a>
+                    </li>
+                    <li>
+                      <a href="https://www.lifeatspotify.com/" role="link">Jobs</a>
+                    </li>
+                    <li>
+                      <a href="https://newsroom.spotify.com/" role="link">For the Record</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right-footer-top-content-links">
+                  <ul>
+                    <p>Communities</p>
+                    <li>
+                      <a href="https://artists.spotify.com/" role="link">For Artists</a>
+                    </li>
+                    <li>
+                      <a href="https://developer.spotify.com/" role="link">Developers</a>
+                    </li>
+                    <li>
+                      <a href="https://ads.spotify.com/" role="link">Advertising</a>
+                    </li>
+                    <li>
+                      <a href="https://investors.spotify.com/" role="link">Investors</a>
+                    </li>
+                    <li>
+                      <a href="https://spotifyforvendors.com/" role="link">Vendors</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right-footer-top-content-links">
+                  <ul>
+                    <p>Useful links</p>
+                    <li>
+                      <a href="https://support.spotify.com/" role="link">Support</a>
+                    </li>
+                    <li>
+                      <a href="https://www.spotify.com/in-en/free/" role="link">Free Mobile App</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="right-footer-top-content-links">
+                  <ul>
+                    <p>Spotify Plans</p>
+                    <li>
+                      <a href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_premium_individual"
+                        role="link">Premium Individual</a>
+                    </li>
+                    <li>
+                      <a href="https://www.spotify.com/in-en/duo/#ref=spotifycom_footer_premium_duo" role="link">Premium
+                        Duo</a>
+                    </li>
+                    <li>
+                      <a href="https://www.spotify.com/in-en/family/#ref=spotifycom_footer_premium_family"
+                        role="link">Premium Family</a>
+                    </li>
+                    <li>
+                      <a href="https://www.spotify.com/in-en/student/#ref=spotifycom_footer_premium_student"
+                        role="link">Premium Student</a>
+                    </li>
+                    <li>
+                      <a href="https://www.spotify.com/in-en/free/#ref=spotifycom_footer_free" role="link">Spotify
+                        Free</a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <div class="right-footer-top-social-media flex">
+                <div class="instagram">
+                  <a href="https://instagram.com/spotify" aria-label="Instagram" title="Instagram" target="_blank"
+                    rel="noopener noreferrer"><img src="svg/instagram-brands-solid.svg" alt="Instagram" /></a>
+                </div>
+                <div class="twitter">
+                  <a href="https://twitter.com/spotify" aria-label="Twitter" title="Twitter" target="_blank"
+                    rel="noopener noreferrer"><img src="svg/x-twitter-brands-solid.svg" alt="Twitter" /></a>
+                </div>
+                <div class="facebook">
+                  <a href="https://www.facebook.com/Spotify" aria-label="Facebook" title="Facebook" target="_blank"
+                    rel="noopener noreferrer"><img src="svg/facebook-brands-solid.svg" alt="Facebook" /></a>
+                </div>
+              </div>
+            </div>
+            <hr class="horizontal-rule" />
+            <div class="right-footer-bottom">
+              <div class="right-footer-bottom-text">
+                <p style="color: #b3b3b3; font-size: 14px">
+                  © 2024 Spotify AB
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="footer white-text font">
+      <footer class="flex">
+        <div class="footer-inner flex">
+          <div class="footer-text">
+            <p style="font-size: 14px; font-weight: 600">
+              Preview of Spotify
+            </p>
+            <p style="font-size: 15px">
+              Sign up to get unlimited songs and podcasts with occasional ads.
+              No credit card needed.
+            </p>
+          </div>
+          <button>Sign up for free</button>
+        </div>
+      </footer>
+    </div>
+    <div>
+      <div class="container-lang" id="container-lang" style="display: none;">
+        <div class="lang-area" id="lang-area">
+          <div class="lang-area-top flex">
+            <div class="lang-area-text white-text font">
+              <h1>Choose a language</h1>
+              <p>This updates what you read on open.spotify.com</p>
+            </div>
+            <button class="flex" id="close-icon"><img src="svg/close-icon.svg" alt="close-icon"></button>
+          </div>
+          <div class="lang-area-bottom">
+            <button class="lang-area-bottom-button font">
+              <span>English</span><span class="lang-area-bottom-span">English</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Afrikaans</span><span class="lang-area-bottom-span">Afrikaans</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>አማርኛ</span><span class="lang-area-bottom-span">Amharic</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>العَرَبِيَّة</span><span class="lang-area-bottom-span">Arabic</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>عربي مصري</span><span class="lang-area-bottom-span">Arabic (Egypt)</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>العَرَبِيَّة مغربي</span><span class="lang-area-bottom-span">Arabic
+                (Morocco)</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>العربية السعودية</span><span class="lang-area-bottom-span">Arabic (Saudi
+                Arabia)</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Azərbaycanca</span><span class="lang-area-bottom-span">Azerbaijani</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Български</span><span class="lang-area-bottom-span">Bulgarian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>भोजपुरी</span><span class="lang-area-bottom-span">Bhojpuri</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>বাংলা</span><span class="lang-area-bottom-span">Bengali</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Bosanski</span><span class="lang-area-bottom-span">Bosnian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Català</span><span class="lang-area-bottom-span">Catalan</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Čeština</span><span class="lang-area-bottom-span">Czech</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Dansk</span><span class="lang-area-bottom-span">Danish</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Deutsch</span><span class="lang-area-bottom-span">German</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Eλληνικά</span><span class="lang-area-bottom-span">Greek</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>English</span><span class="lang-area-bottom-span">United Kingdom</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Español de España</span><span class="lang-area-bottom-span">European
+                Spanish</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Español (Argentina)</span><span class="lang-area-bottom-span">Spanish
+                (Argentina)</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Español (México)</span><span class="lang-area-bottom-span">Spanish (Mexico)</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Eesti</span><span class="lang-area-bottom-span">Estonian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Euskara</span><span class="lang-area-bottom-span">Basque</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>فارسی</span><span class="lang-area-bottom-span">Persian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Suomeksi</span><span class="lang-area-bottom-span">Finnish</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Filipino</span><span class="lang-area-bottom-span">Filipino</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Français</span><span class="lang-area-bottom-span">French</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Français Canadien</span><span class="lang-area-bottom-span">Canadian French</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Galego</span><span class="lang-area-bottom-span">Galician</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>ગુજરાતી</span><span class="lang-area-bottom-span">Gujarati</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>עברית</span><span class="lang-area-bottom-span">Hebrew</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>हिन्दी</span><span class="lang-area-bottom-span">Hindi</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Hrvatski</span><span class="lang-area-bottom-span">Croatian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Magyar</span><span class="lang-area-bottom-span">Hungarian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Indonesia</span><span class="lang-area-bottom-span">Indonesian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Íslenska</span><span class="lang-area-bottom-span">Icelandic</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Italiano</span><span class="lang-area-bottom-span">Italian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>日本語</span><span class="lang-area-bottom-span">Japanese</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>ಕನ್ನಡ</span><span class="lang-area-bottom-span">Kannada</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>한국어</span><span class="lang-area-bottom-span">Korean</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Lietuvių</span><span class="lang-area-bottom-span">Lithuanian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Latviešu</span><span class="lang-area-bottom-span">Latvian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Македонски</span><span class="lang-area-bottom-span">Macedonian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>മലയാളം</span><span class="lang-area-bottom-span">Malayalam</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>मराठी</span><span class="lang-area-bottom-span">Marathi</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Bahasa Melayu</span><span class="lang-area-bottom-span">Malay</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Norsk bokmål</span><span class="lang-area-bottom-span">Norwegian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>नेपाली</span><span class="lang-area-bottom-span">Nepali</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Nederlands</span><span class="lang-area-bottom-span">Dutch</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>ଓଡ଼ିଆ</span><span class="lang-area-bottom-span">Odia</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>ਪੰਜਾਬੀ</span><span class="lang-area-bottom-span">Punjabi</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>پنجابی</span><span class="lang-area-bottom-span">Punjabi (Naskh)</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Polski</span><span class="lang-area-bottom-span">Polish</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Português do Brasil</span><span class="lang-area-bottom-span">Portuguese
+                (Brazil)</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Português</span><span class="lang-area-bottom-span">European Portuguese</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Română</span><span class="lang-area-bottom-span">Romanian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Русский</span><span class="lang-area-bottom-span">Russian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Slovenčina</span><span class="lang-area-bottom-span">Slovak</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Slovenščina</span><span class="lang-area-bottom-span">Slovenian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Српски</span><span class="lang-area-bottom-span">Serbian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Svenska</span><span class="lang-area-bottom-span">Swedish</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Kiswahili</span><span class="lang-area-bottom-span">Swahili</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>தமிழ்</span><span class="lang-area-bottom-span">Tamil</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>తెలుగు</span><span class="lang-area-bottom-span">Telugu</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>ไทย</span><span class="lang-area-bottom-span">Thai</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Türkçe</span><span class="lang-area-bottom-span">Turkish</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Українська</span><span class="lang-area-bottom-span">Ukrainian</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>اردو</span><span class="lang-area-bottom-span">Urdu</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>Tiếng Việt</span><span class="lang-area-bottom-span">Vietnamese</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>简体中文</span><span class="lang-area-bottom-span">Simplified Chinese</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>繁體中文 (香港)</span><span class="lang-area-bottom-span">Chinese(Traditional) Hong
+                Kong</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>中文</span><span class="lang-area-bottom-span">Traditional Chinese</span>
+            </button>
+            <button class="lang-area-bottom-button font">
+              <span>isiZulu</span><span class="lang-area-bottom-span">Zulu</span>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="buttonToggle.js"></script>
+</body>
+
+</html>

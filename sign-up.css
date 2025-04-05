@@ -1,0 +1,117 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    height: 100vh;
+    background-color: #121212;
+}
+.container{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.logo{
+    padding: 32px 0px 24px;
+}
+.logo img{
+    height: 40px;
+}
+.container-content{
+    width: 348px;
+    flex-direction: column;
+    gap: 13px;
+}
+.container-content h1{
+    font-size: 45px;
+    text-align: center;
+}
+.mail-info{
+    font-weight: 600;
+    font-size: 14px;
+    margin-bottom: 10px;
+}
+.mail-info p{
+    margin-bottom: 5px;
+}
+.mail-info-input{
+    background-color: transparent;
+    outline: none;
+    font-size: 16px;
+    border: 1px solid #9f9f9f82;
+    border-radius: 4px;
+    padding: 15px;
+    width: 100%;
+}
+.mail-info-input:hover{
+    border: 1px solid #fff;
+}
+.link-button{
+    font-weight: 700;
+    font-size: 17px;
+    border: none;
+    width: 100%;
+    background-color: #1ed760;
+    padding: 14px;
+    border-radius: 500px;
+    cursor: pointer;
+}
+.link-button:hover{
+    background-color: #4aff8a;
+}
+.choice{
+    margin: 20px;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+.choice hr{
+    border: 1px solid #9f9f9f63;
+    width: 19%;
+    height: 1px;
+}
+.choice p{
+    padding: 10px;
+    color: #fff;
+}
+.container-content-inner-list{
+    list-style: none;
+}
+.list-class .media-login{
+    cursor: pointer;
+    width: 324px;
+    background-color: transparent;
+    height: 48px;
+    padding: 7px 31px;
+    margin: 0px 0px 8px;
+    border: 0.5px solid #9f9f9f6c;
+    border-radius: 500px;
+    align-items: center;
+    gap: 2vw;
+    font-size: 15px;
+    font-weight: 600;
+}
+.media-login:hover{
+    border: 1px solid #fff;
+}
+.container-content-inner-hr{
+    margin: 32px 100px;
+    width: 21%;
+    border: 1px solid #9f9f9f2d;
+}
+.container-content-p{
+    color: #9f9f9f;
+    font-size: 15px;
+}
+.container-content-p a:hover{
+    color: #1ed760;
+}
+.container-footer{
+    margin: 32px;
+}
+.container-footer p,
+.container-footer a{
+    font-size: 14px;
+    color: #9f9f9f;
+}

@@ -1,0 +1,45 @@
+.right-top{
+    padding: 0px 20.2453px;
+}
+.right-content{
+    margin: 48px 0px 0px;
+    padding: 0;
+}   
+.right-content-text{
+    margin-bottom: 8px;
+}
+.right-content-text-h2{
+    align-self: flex-end;
+    justify-content: flex-end;
+}
+.right-content-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: auto;
+}
+.browse-card{
+    padding: 14px;
+}
+.browse-card a{
+    text-decoration: none;
+}
+ .browse-card .browse-card-inner {
+    width: 273px;
+    height: 153px;
+    background-color: #dc148c;
+    border-radius: 8px;
+    overflow: hidden;
+}
+.browse-card-inner img{
+    width: 123px;
+    height: 123px;
+    right: 0;
+    transform: rotate(25deg) translate(25%, 19%);
+    border-radius: 4px;
+}
+.browse-card-h2{
+    height: 60px;
+    font-size: 25px;
+    padding: 16px 40px 16px 16px;
+
+}

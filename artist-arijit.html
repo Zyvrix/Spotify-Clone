@@ -1,0 +1,782 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pritam | Spotify</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="utility.css" />
+    <link
+      rel="icon"
+      href="https://open.spotify.com/favicon.ico"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="artist-arijit.css" />
+    <script src="arijit_player.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="navbar flex">
+        <div class="header flex">
+          <div class="logo">
+            <img src="svg/logo.svg" alt="Spotify" title="Spotify" />
+          </div>
+          <div class="navigate flex">
+            <div class="home">
+              <a href="index.html"
+                ><img src="svg/home.svg" alt="Home" title="Home"
+              /></a>
+            </div>
+            <div class="search-bar flex">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                class="Svg-sc-ytk21e-0 bneLcE search-icon"
+                fill="#9f9f9f"
+                height="24px"
+              >
+                <path
+                  d="M10.533 1.27893C5.35215 1.27893 1.12598 5.41887 1.12598 10.5579C1.12598 15.697 5.35215 19.8369 10.533 19.8369C12.767 19.8369 14.8235 19.0671 16.4402 17.7794L20.7929 22.132C21.1834 22.5226 21.8166 22.5226 22.2071 22.132C22.5976 21.7415 22.5976 21.1083 22.2071 20.7178L17.8634 16.3741C19.1616 14.7849 19.94 12.7634 19.94 10.5579C19.94 5.41887 15.7138 1.27893 10.533 1.27893ZM3.12598 10.5579C3.12598 6.55226 6.42768 3.27893 10.533 3.27893C14.6383 3.27893 17.94 6.55226 17.94 10.5579C17.94 14.5636 14.6383 17.8369 10.533 17.8369C6.42768 17.8369 3.12598 14.5636 3.12598 10.5579Z"
+                ></path>
+              </svg>
+              <input
+                type="text"
+                placeholder="What do you want to play?"
+                class="white-text font"
+              />
+              <a href="browse.html"
+                ><img
+                  src="svg/browse.svg"
+                  alt="browse-icon"
+                  title="Browse"
+                  class="browse-icon"
+              /></a>
+            </div>
+          </div>
+          <div class="login flex">
+            <a href="sign-up.html"
+              ><button class="sign-up font">Sign Up</button></a
+            >
+            <a href="login.html"><button class="log-in font">Log in</button></a>
+          </div>
+        </div>
+      </div>
+      <div class="container-content flex">
+        <div class="left">
+          <div class="library flex">
+            <div class="your-library font flex" title="Collapse Your Library">
+              <svg
+                height="24"
+                fill="rgba(179,179,179,1)"
+                xmlns="http://www.w3.org/2000/svg"
+                data-encore-id="icon"
+                role="img"
+                aria-hidden="true"
+                viewBox="0 0 24 24"
+                class="Svg-sc-ytk21e-0 bneLcE playlist"
+              >
+                <path
+                  d="M3 22a1 1 0 0 1-1-1V3a1 1 0 0 1 2 0v18a1 1 0 0 1-1 1zM15.5 2.134A1 1 0 0 0 14 3v18a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1V6.464a1 1 0 0 0-.5-.866l-6-3.464zM9 2a1 1 0 0 0-1 1v18a1 1 0 1 0 2 0V3a1 1 0 0 0-1-1z"
+                ></path>
+              </svg>
+              <p>Your Library</p>
+            </div>
+            <div class="add-icon" title="Create playlist or folder">
+              <img src="svg/add-icon.svg" alt="add-icon" />
+            </div>
+          </div>
+          <div class="section white-text font">
+            <div class="playlist-section flex">
+              <div class="create-playlist flex">
+                <div class="create-playlist-text">
+                  <p style="font-weight: bold">Create your first playlist</p>
+                  <p style="font-size: 14px">It's easy we'll help you</p>
+                </div>
+                <div class="create-playlist-button">
+                  <button>Create playlist</button>
+                </div>
+              </div>
+              <div class="podcast-section flex">
+                <div class="podcast-section-text">
+                  <p style="font-weight: bold">
+                    Let's find some podcasts to follow
+                  </p>
+                  <p style="font-size: 14px">
+                    We'll keep you updated on new episodes
+                  </p>
+                </div>
+                <div class="podcast-section-button">
+                  <button>Browse podcasts</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="left-footer">
+            <div class="notice">
+              <div class="policy font flex">
+                <div class="legal">
+                  <a href="https://www.spotify.com/in-en/legal/">Legal</a>
+                </div>
+                <div class="safety">
+                  <a href="https://www.spotify.com/in-en/safetyandprivacy/"
+                    >Safety & Privacy Center</a
+                  >
+                </div>
+                <div class="privacy">
+                  <a href="https://www.spotify.com/in-en/legal/privacy-policy/"
+                    >Privacy Policy</a
+                  >
+                </div>
+                <div class="cookies">
+                  <a href="https://www.spotify.com/in-en/legal/cookies-policy/"
+                    >Cookies</a
+                  >
+                </div>
+                <div class="ads">
+                  <a
+                    href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"
+                    >About Ads</a
+                  >
+                </div>
+                <div class="accessibility">
+                  <a href="https://www.spotify.com/in-en/accessibility/"
+                    >Accessibility</a
+                  >
+                </div>
+              </div>
+              <div class="cookie">
+                <a
+                  href="https://www.spotify.com/legal/cookies-policy/"
+                  target="_blank"
+                  class="white-text font"
+                  >Cookies</a
+                >
+              </div>
+            </div>
+            <div class="lang">
+              <button class="white-text font flex" id="language-toggle">
+                <img src="svg/language.svg" alt="language" height="16px" />
+                English
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="right white-text font">
+          <div class="right-top">
+            <div class="right-content">
+              <div class="first-container">
+                <div class="pritam-img">
+                  <div class="artist-content">
+                    <!-- Profile Image Circle -->
+                    <div class="profile-circle">
+                      <img
+                        src=""
+                        alt=""
+                        class="profile-image"
+                      />
+                    </div>
+                    <div class="content">
+                      <div class="verified-container">
+                        <svg
+                          data-encore-id="icon"
+                          role="img"
+                          aria-hidden="true"
+                          class="verified-icon"
+                          viewBox="0 0 24 24"
+                        >
+                          <path
+                            d="M10.814.5a1.658 1.658 0 0 1 2.372 0l2.512 2.572 3.595-.043a1.658 1.658 0 0 1 1.678 1.678l-.043 3.595 2.572 2.512c.667.65.667 1.722 0 2.372l-2.572 2.512.043 3.595a1.658 1.658 0 0 1-1.678 1.678l-3.595-.043-2.512 2.572a1.658 1.658 0 0 1-2.372 0l-2.512-2.572-3.595.043a1.658 1.658 0 0 1-1.678-1.678l.043-3.595L.5 13.186a1.658 1.658 0 0 1 0-2.372l2.572-2.512-.043-3.595a1.658 1.658 0 0 1 1.678-1.678l3.595.043L10.814.5zm6.584 9.12a1 1 0 0 0-1.414-1.413l-6.011 6.01-1.894-1.893a1 1 0 0 0-1.414 1.414l3.308 3.308 7.425-7.425z"
+                          ></path>
+                        </svg>
+                        <span class="text1">Verified Artist</span>
+                      </div>
+                      <h1 class="text2">Arijit Singh</h1>
+                      <p class="text3">41,963,858 monthly listeners</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="popular-section">
+                <div class="controls">
+                  <button class="play-button">
+                    <svg viewBox="0 0 24 24" width="24" height="24">
+                      <path d="M8 5v14l11-7z" fill="currentColor" />
+                    </svg>
+                  </button>
+                  <button class="follow-button">Follow</button>
+                  <button class="more-button">•••</button>
+                </div>
+
+                <h2 class="section-title">Popular</h2>
+              </div>
+              <div class="songs-media">
+                <ul></ul>
+              </div>
+              <div class="about-container">
+                <h2 class="about-title">About</h2>
+                <div class="about-content">
+                  <img
+                    src="https://i.scdn.co/image/ab676161000051745ba2d75eb08a2d672f9b69b7"
+                    alt="Arijit"
+                    class="profile-image2"
+                  />
+                  <p class="monthly-listeners">41,963,858 Monthly Listeners</p>
+                  <div class="rank-badge">
+                    <strong>#88</strong>
+                    <div>in the world</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="right-bottom">
+            <div class="right-footer">
+              <div class="right-footer-top flex">
+                <div class="right-footer-top-content flex">
+                  <div class="right-footer-top-content-links">
+                    <ul>
+                      <p>Company</p>
+                      <li>
+                        <a
+                          href="https://www.spotify.com/in-en/about-us/contact/"
+                          role="link"
+                          >About</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://www.lifeatspotify.com/" role="link"
+                          >Jobs</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://newsroom.spotify.com/" role="link"
+                          >For the Record</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="right-footer-top-content-links">
+                    <ul>
+                      <p>Communities</p>
+                      <li>
+                        <a href="https://artists.spotify.com/" role="link"
+                          >For Artists</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://developer.spotify.com/" role="link"
+                          >Developers</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://ads.spotify.com/" role="link"
+                          >Advertising</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://investors.spotify.com/" role="link"
+                          >Investors</a
+                        >
+                      </li>
+                      <li>
+                        <a href="https://spotifyforvendors.com/" role="link"
+                          >Vendors</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="right-footer-top-content-links">
+                    <ul>
+                      <p>Useful links</p>
+                      <li>
+                        <a href="https://support.spotify.com/" role="link"
+                          >Support</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.spotify.com/in-en/free/"
+                          role="link"
+                          >Free Mobile App</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="right-footer-top-content-links">
+                    <ul>
+                      <p>Spotify Plans</p>
+                      <li>
+                        <a
+                          href="https://www.spotify.com/in-en/premium/#ref=spotifycom_footer_premium_individual"
+                          role="link"
+                          >Premium Individual</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.spotify.com/in-en/duo/#ref=spotifycom_footer_premium_duo"
+                          role="link"
+                          >Premium Duo</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.spotify.com/in-en/family/#ref=spotifycom_footer_premium_family"
+                          role="link"
+                          >Premium Family</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.spotify.com/in-en/student/#ref=spotifycom_footer_premium_student"
+                          role="link"
+                          >Premium Student</a
+                        >
+                      </li>
+                      <li>
+                        <a
+                          href="https://www.spotify.com/in-en/free/#ref=spotifycom_footer_free"
+                          role="link"
+                          >Spotify Free</a
+                        >
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="right-footer-top-social-media flex">
+                  <div class="instagram">
+                    <a
+                      href="https://instagram.com/spotify"
+                      aria-label="Instagram"
+                      title="Instagram"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img
+                        src="svg/instagram-brands-solid.svg"
+                        alt="Instagram"
+                    /></a>
+                  </div>
+                  <div class="twitter">
+                    <a
+                      href="https://twitter.com/spotify"
+                      aria-label="Twitter"
+                      title="Twitter"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img src="svg/x-twitter-brands-solid.svg" alt="Twitter"
+                    /></a>
+                  </div>
+                  <div class="facebook">
+                    <a
+                      href="https://www.facebook.com/Spotify"
+                      aria-label="Facebook"
+                      title="Facebook"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      ><img src="svg/facebook-brands-solid.svg" alt="Facebook"
+                    /></a>
+                  </div>
+                </div>
+              </div>
+              <hr class="horizontal-rule" />
+              <div class="right-footer-bottom">
+                <div class="right-footer-bottom-text">
+                  <p style="color: #b3b3b3; font-size: 14px">
+                    © 2024 Spotify AB
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="footer white-text font">
+        <footer class="flex">
+          <div class="footer-inner flex">
+            <div class="footer-text">
+              <p style="font-size: 14px; font-weight: 600">
+                Preview of Spotify
+              </p>
+              <p style="font-size: 15px">
+                Sign up to get unlimited songs and podcasts with occasional ads.
+                No credit card needed.
+              </p>
+            </div>
+            <a href="sign-up.html" class="flex"
+              ><button>Sign up for free</button></a
+            >
+          </div>
+        </footer>
+      </div>
+      <div>
+        <div class="container-lang" id="container-lang" style="display: none">
+          <div class="lang-area" id="lang-area">
+            <div class="lang-area-top flex">
+              <div class="lang-area-text white-text font">
+                <h1>Choose a language</h1>
+                <p>This updates what you read on open.spotify.com</p>
+              </div>
+              <button class="flex" id="close-icon">
+                <img src="svg/close-icon.svg" alt="close-icon" />
+              </button>
+            </div>
+            <div class="lang-area-bottom">
+              <button class="lang-area-bottom-button font">
+                <span>English</span
+                ><span class="lang-area-bottom-span">English</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Afrikaans</span
+                ><span class="lang-area-bottom-span">Afrikaans</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>አማርኛ</span
+                ><span class="lang-area-bottom-span">Amharic</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>العَرَبِيَّة</span
+                ><span class="lang-area-bottom-span">Arabic</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>عربي مصري</span
+                ><span class="lang-area-bottom-span">Arabic (Egypt)</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>العَرَبِيَّة مغربي</span
+                ><span class="lang-area-bottom-span">Arabic (Morocco)</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>العربية السعودية</span
+                ><span class="lang-area-bottom-span"
+                  >Arabic (Saudi Arabia)</span
+                >
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Azərbaycanca</span
+                ><span class="lang-area-bottom-span">Azerbaijani</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Български</span
+                ><span class="lang-area-bottom-span">Bulgarian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>भोजपुरी</span
+                ><span class="lang-area-bottom-span">Bhojpuri</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>বাংলা</span
+                ><span class="lang-area-bottom-span">Bengali</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Bosanski</span
+                ><span class="lang-area-bottom-span">Bosnian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Català</span
+                ><span class="lang-area-bottom-span">Catalan</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Čeština</span
+                ><span class="lang-area-bottom-span">Czech</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Dansk</span
+                ><span class="lang-area-bottom-span">Danish</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Deutsch</span
+                ><span class="lang-area-bottom-span">German</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Eλληνικά</span
+                ><span class="lang-area-bottom-span">Greek</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>English</span
+                ><span class="lang-area-bottom-span">United Kingdom</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Español de España</span
+                ><span class="lang-area-bottom-span">European Spanish</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Español (Argentina)</span
+                ><span class="lang-area-bottom-span">Spanish (Argentina)</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Español (México)</span
+                ><span class="lang-area-bottom-span">Spanish (Mexico)</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Eesti</span
+                ><span class="lang-area-bottom-span">Estonian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Euskara</span
+                ><span class="lang-area-bottom-span">Basque</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>فارسی</span
+                ><span class="lang-area-bottom-span">Persian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Suomeksi</span
+                ><span class="lang-area-bottom-span">Finnish</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Filipino</span
+                ><span class="lang-area-bottom-span">Filipino</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Français</span
+                ><span class="lang-area-bottom-span">French</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Français Canadien</span
+                ><span class="lang-area-bottom-span">Canadian French</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Galego</span
+                ><span class="lang-area-bottom-span">Galician</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>ગુજરાતી</span
+                ><span class="lang-area-bottom-span">Gujarati</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>עברית</span
+                ><span class="lang-area-bottom-span">Hebrew</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>हिन्दी</span
+                ><span class="lang-area-bottom-span">Hindi</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Hrvatski</span
+                ><span class="lang-area-bottom-span">Croatian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Magyar</span
+                ><span class="lang-area-bottom-span">Hungarian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Indonesia</span
+                ><span class="lang-area-bottom-span">Indonesian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Íslenska</span
+                ><span class="lang-area-bottom-span">Icelandic</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Italiano</span
+                ><span class="lang-area-bottom-span">Italian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>日本語</span
+                ><span class="lang-area-bottom-span">Japanese</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>ಕನ್ನಡ</span
+                ><span class="lang-area-bottom-span">Kannada</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>한국어</span
+                ><span class="lang-area-bottom-span">Korean</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Lietuvių</span
+                ><span class="lang-area-bottom-span">Lithuanian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Latviešu</span
+                ><span class="lang-area-bottom-span">Latvian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Македонски</span
+                ><span class="lang-area-bottom-span">Macedonian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>മലയാളം</span
+                ><span class="lang-area-bottom-span">Malayalam</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>मराठी</span
+                ><span class="lang-area-bottom-span">Marathi</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Bahasa Melayu</span
+                ><span class="lang-area-bottom-span">Malay</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Norsk bokmål</span
+                ><span class="lang-area-bottom-span">Norwegian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>नेपाली</span
+                ><span class="lang-area-bottom-span">Nepali</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Nederlands</span
+                ><span class="lang-area-bottom-span">Dutch</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>ଓଡ଼ିଆ</span><span class="lang-area-bottom-span">Odia</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>ਪੰਜਾਬੀ</span
+                ><span class="lang-area-bottom-span">Punjabi</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>پنجابی</span
+                ><span class="lang-area-bottom-span">Punjabi (Naskh)</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Polski</span
+                ><span class="lang-area-bottom-span">Polish</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Português do Brasil</span
+                ><span class="lang-area-bottom-span">Portuguese (Brazil)</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Português</span
+                ><span class="lang-area-bottom-span">European Portuguese</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Română</span
+                ><span class="lang-area-bottom-span">Romanian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Русский</span
+                ><span class="lang-area-bottom-span">Russian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Slovenčina</span
+                ><span class="lang-area-bottom-span">Slovak</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Slovenščina</span
+                ><span class="lang-area-bottom-span">Slovenian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Српски</span
+                ><span class="lang-area-bottom-span">Serbian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Svenska</span
+                ><span class="lang-area-bottom-span">Swedish</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Kiswahili</span
+                ><span class="lang-area-bottom-span">Swahili</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>தமிழ்</span
+                ><span class="lang-area-bottom-span">Tamil</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>తెలుగు</span
+                ><span class="lang-area-bottom-span">Telugu</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>ไทย</span><span class="lang-area-bottom-span">Thai</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Türkçe</span
+                ><span class="lang-area-bottom-span">Turkish</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Українська</span
+                ><span class="lang-area-bottom-span">Ukrainian</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>اردو</span><span class="lang-area-bottom-span">Urdu</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>Tiếng Việt</span
+                ><span class="lang-area-bottom-span">Vietnamese</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>简体中文</span
+                ><span class="lang-area-bottom-span">Simplified Chinese</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>繁體中文 (香港)</span
+                ><span class="lang-area-bottom-span"
+                  >Chinese(Traditional) Hong Kong</span
+                >
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>中文</span
+                ><span class="lang-area-bottom-span">Traditional Chinese</span>
+              </button>
+              <button class="lang-area-bottom-button font">
+                <span>isiZulu</span
+                ><span class="lang-area-bottom-span">Zulu</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="music-player">
+        <div class="music-player-inner flex">
+          <div class="song flex white-text font">
+            <div>
+              <img src="" alt="" class="song-image" />
+            </div>
+            <div class="song-name"></div>
+            <img src="svg/add-playlist-icon.svg" alt="" style="height: 12px" />
+          </div>
+          <div class="song-control flex">
+            <div class="song-control-top flex">
+              <button class="shuffle-icon" title="Shuffle playlist">
+                <img src="svg/shuffle.svg" />
+              </button>
+              <button class="prev-icon" title="previous song">
+                <img src="svg/prev-icon.svg" id="previous" />
+              </button>
+              <button class="song-play-icon flex">
+                <img src="svg/play-icon.svg" id="play" />
+              </button>
+              <button class="next-icon" title="next song">
+                <img src="svg/next-icon.svg" id="next" />
+              </button>
+              <button class="loop-icon" title="loop song">
+                <img src="svg/loop-icon.svg" />
+              </button>
+            </div>
+            <div class="song-control-bottom flex font">
+              <div class="song-time-start white-text"></div>
+              <div class="seekbar">
+                <div class="progress"></div>
+                <div class="circle"></div>
+              </div>
+              <div class="song-time-end white-text"></div>
+            </div>
+          </div>
+          <div class="song-options flex">
+            <img src="svg/view.svg" alt="song" title="View Song" />
+            <img src="svg/lyrics.svg" alt="song" title="Show Lyrics" />
+            <img src="svg/queue.svg" alt="song" title="Show Queue" />
+            <img
+              src="svg/connection.svg"
+              alt="song"
+              title="Connect to a device"
+            />
+            <div class="song-volume flex">
+              <img src="svg/volume.svg" alt="song" />
+              <input type="range" min="0" max="100" value="30" />
+            </div>
+            <img src="svg/miniplayer.svg" alt="song" title="Open miniplayer" />
+            <img src="svg/expand.svg" alt="song" title="Full Screen" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="buttonToggle.js"></script>
+  </body>
+</html>

@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://open.spotify.com/favicon.ico" type="image/x-icon">
+    <title>Log in - Spotify</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container font">
+        <div class="container-content flex white-text">
+            <div class="container-content-inner flex">
+                <div class="logo flex">
+                    <div class="logo-inner">
+                        <img src="svg/logo.svg" alt="">
+                    </div>
+                </div>
+                <h2 class="container-content-inner-h2">Log in to Spotify</h2>
+                <ul class="container-content-inner-list">
+                    <li class="list-class">
+                        <button class="media-login flex">
+                            <img src="https://accounts.scdn.co/sso/images/new-google-icon.72fd940a229bc94cf9484a3320b3dccb.svg"
+                                alt="Google">
+                            <p class="white-text font">Continue with Google</p>
+                        </button>
+                    </li>
+                    <li class="list-class">
+                        <button class="media-login flex" style="gap: 1.5vw;">
+                            <img src="https://accounts.scdn.co/sso/images/new-facebook-icon.eae8e1b6256f7ccf01cf81913254e70b.svg"
+                                alt="Facebook">
+                            <p class="white-text font">Continue with Facebook</p>
+                        </button>
+                    </li>
+                    <li class="list-class">
+                        <button class="media-login flex">
+                            <img src="https://accounts.scdn.co/sso/images/new-apple-icon.e356139ea90852da2e60f1ff738f3cbb.svg"
+                                alt="Apple">
+                            <p class="white-text font">Continue with Apple</p>
+                        </button>
+                    </li>
+                    <li class="list-class">
+                        <button class="media-login flex" style="justify-content: center;">
+                            <p class="white-text font">Continue with phone number</p>
+                        </button>
+                    </li>
+                </ul>
+                <hr class="container-content-inner-hr">
+                <form class="login-form" action="index.html">
+                    <div class="login-info">
+                        <div class="name-info flex">
+                            <div class="name-info-text white-text">
+                                <p>Email or username</p>
+                            </div>
+                            <input class="name-info-input white-text" type="text" placeholder="Email or username" required>
+                        </div>
+                        <div class="name-info flex">
+                            <div class="name-info-text white-text">
+                                <p>Password</p>
+                            </div>
+                            <div class="name-info-input-class flex">
+                                <input id="password-input" class="name-info-input white-text" type="password"
+                                    placeholder="Password" required>
+                                <button class="show-password" onclick="togglePasswordVisibility()">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="password-icon"
+                                        fill="none">
+                                        <path d="M12 4c-4.42 0-8 4-8 4s3.58 4 8 4 8-4 8-4-3.58-4-8-4z" stroke="#fff"
+                                            stroke-width="2" />
+                                        <path d="M12 9c-1.105 0-2-.895-2-2s.895-2 2-2 2 .895 2 2-.895 2-2 2z"
+                                            fill="#fff" />
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="login-button font">
+                        <button>Log In</button>
+                    </div>
+                    <div class="login-forget flex">
+                        <a href="forgot_password.html" class="font white-text">Forgot your password?</a>
+                    </div>
+                </form>
+                <div class="sign-up-section flex">
+                    <p>Don't have an account? <a href="sign-up.html" class="white-text">Signup for Spotify</a></p>
+                </div>
+            </div>
+        </div>
+        <footer class="container-footer white-text flex">
+            <div class="container-footer-inner">
+                <p class="">This site is protected by reCAPTCHA and the Google
+                    <a href="https://policies.google.com/privacy" target="_blank">Privacy Policy</a>
+                    and
+                    <a href="https://policies.google.com/terms" target="_blank">Terms of Service</a>
+                    apply.
+                </p>
+            </div>
+        </footer>
+    </div>
+    <script>
+        function togglePasswordVisibility() {
+            const passwordInput = document.getElementById("password-input");
+            const passwordIcon = document.querySelector(".password-icon path");
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                passwordIcon.setAttribute("stroke", "#1ed760");
+            } else {
+                passwordInput.type = "password";
+                passwordIcon.setAttribute("stroke", "#fff");
+            }
+        }
+    </script>
+</body>
+</html>
