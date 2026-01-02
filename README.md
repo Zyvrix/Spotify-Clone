@@ -18,72 +18,17 @@ This project focuses on replicating the UI and core music playback functionality
 📂 Local audio file playback
 
 🛠️ Tech Stack
-Frontend
-
-HTML5
-
-CSS3
-
-JavaScript (Vanilla JS)
-
-Backend
+ Frontend
+ HTML5
+ CSS3
+ JavaScript (Vanilla JS)
+ Backend
 
 ❌ No backend implemented
 
 Audio and images are served from local folders
 
 Application logic handled entirely on the client side
-
-📂 Project Structure
-Spotify-Clone/
-│
-├── images/           # UI images
-├── songs/            # Audio files
-├── arijit_songs/     # Artist-specific songs
-├── arijit_img/       # Artist images
-├── svg/              # Icons
-│
-├── browse.html
-├── artist-arijit.html
-├── artist-Pritam.html
-├── forgot_password.html
-│
-├── browse.css
-├── artist-arijit.css
-├── artist-pritam.css
-├── forgot_password.css
-│
-├── arijit_player.js
-├── buttonToggle.js
-└── README.md
-
-🚧 Limitations
-
-Let’s be honest:
-
-No real user authentication
-
-No streaming (only local files)
-
-No database
-
-No backend APIs
-
-This is a UI + logic demo, not a production-grade Spotify clone.
-
-🔮 Future Improvements (If You’re Serious)
-
-If you want this to matter:
-
-Add Node.js + Express backend
-
-Use MongoDB for users & playlists
-
-Implement JWT authentication
-
-Stream audio instead of local files
-
-Convert to React for scalability
 
 👤 Author
 
